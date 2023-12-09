@@ -9,16 +9,10 @@
     <title>Большие данные</title>
     <style type="text/css">
         body {background-color: #EAE7DC; font-size:25px;font-family: truetype; text-decoration-color:#000000 ; }
-        .hranen{color:#000000;margin-bottom: 25px; margin-top: 0%; margin-right: 3% ;margin-left:50%;}
-        .istoch{color:#000000;margin-left:3%; margin-bottom: 5%; font-family: truetype; margin-top: 5%; margin-right: 50%}
-        .zakluch{color:#000000; margin-left:8%; margin-bottom: 5%; margin-top: 3%;}
-        .clasdan{color:#000000; margin-left:50%; margin-bottom: 5%; margin-top: 5%; margin-right: 3%;}
-        .second{margin:8%; margin-bottom: 25px; color:#000000; margin-top: 5%;}
-       .first{color:#000000; font-size:25px;  margin: 8%; margin-top: 5%; margin-bottom: 0%;}
-        .zero{color:#000000; margin-bottom: 3em;}
+       
         a {color:#000000; font-family: truetype;}
-        .zeroone{font-size:28px}
-        .zerotwo{font-size:30px; line-height: 45px; margin-left: 7%;}
+     
+        .image-with-text {  display: flex;  align-items: center; width: 30%; }
         .but{font-size:25px; margin-left: 90%;color:#000000;background-color: #EAE7DC; border-style: none;}
         input[type = "button"] {font-size: 15pt;text-align: center; font-family: truetype; background-color: #EAE7DC; color: #000000;border: none;
 }
@@ -31,30 +25,39 @@
 
 <body>
 
-
+  <img src="Group 15.png" height="140" > 
     <div >
         <nav style="color:#000000;">
           
-          <article style="color:#000000; font-family: truetype; font-size:25px; margin-left: 8%;"> Навигация:</article> 
+          <a href="lab12.html" target="_blank" style="  font-family: truetype; font-size:22px; margin-left: 3%;text-decoration:none;">Women</a>
           
-          <a href="lab12.html" target="_blank" style="  font-family: truetype; font-size:22px; margin-left: 8%;"> Анализ Больших данных</a>
-          |
-          <a href="lab13.html" target="_blank" style=" font-family: truetype;  font-size:22px;"> Использованные источники</a>
+          <a href="lab13.html" target="_blank" style=" font-family: truetype; margin-left: 3%; font-size:22px;text-decoration:none;"> Men</a>
+          <a href="lab13.html" target="_blank" style=" font-family: truetype; margin-left: 3%; font-size:22px;text-decoration:none;"> Home & Life style</a>
+          <a href="lab13.html" target="_blank" style=" font-family: truetype; margin-left: 3%; font-size:22px;text-decoration:none;"> Brands </a>
          
+          <form action="поиск.txt" method="GET" >
+            <label for="search-input" class="search-input" >
+              <input type="text" id="search-input" name="query" placeholder="Введите запрос" style="border: none; text-align: right;" />
+            </label>
+            <input type="submit" value="Поиск" style=" border: none; background-color: #E98074; " />
+          </form>
         </nav>
           
     </div>
     
     <div>         
-        <p align = "center" style="margin-top: 3em;">
-           <img src="Group 15.png" height="140" >   
-         </p>
+        
          <h1 style="color:#000000; font-size:60px; text-align: center;font-family: truetype">  SHOPE NAME </h1>
        
      </div> 
+     <div class="image-with-text">
+     <img src="women.jpg" style="height: 450pt;margin-left: 4%;" >
+     <img src="men.jpg" style="height:450pt; margin-left: 6%;" >
+     <img src="home.jpg"  style="height: 450pt; margin-left: 6%;">
+     </div>
     
 <div id="inner_footer" >
-    <a id="" href="mailto:lada.dmitrieva.2001@mail.ru" class="main_link menu_fade" style=" font-family: truetype; font-size:32px;" >
+    <a id="" href="mailto:lada.dmitrieva.2001@mail.ru" class="main_link menu_fade" style="text-decoration:none; font-family: truetype; font-size:32px;" >
       Сотрудничество
     </a>
   </div>
