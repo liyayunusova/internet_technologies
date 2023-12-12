@@ -40,4 +40,5 @@
 
 Диаграмма вариантов использования
 
-![Диаграмма использования drawio (1)](https://github.com/liyayunusova/internet_technologies/assets/55926224/9bb5a034-d311-421d-9cb1-9308a6b004d8)
+![Диаграмма без названия drawio (2)](https://github.com/liyayunusova/internet_technologies/assets/55926224/f3ab6bb4-ba57-4b8c-9d17-f7b4bfd8aa2f)
+
