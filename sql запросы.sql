@@ -4,7 +4,7 @@ SELECT quantity_in_total
 FROM Product
 GROUP BY product_name;
 
-2. Получить список клиентов, сделавших заказы со статусом "Завершен":
+2. Получить список клиентов, сделавших заказы со статусом "отменён":
 
 SELECT c.client_id as client_id, full_name
 FROM Client c
