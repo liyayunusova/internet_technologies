@@ -9,7 +9,7 @@ GROUP BY product_name;
 SELECT c.client_id as client_id, full_name
 FROM Client c
 INNER JOIN Order o ON c.client_id = o.client_id
-WHERE status = 'Завершен';
+WHERE status = 'отменён';
 
 
 3. Рассчитать общую выручку с каждого контракта:
@@ -31,8 +31,8 @@ FROM position1;
 SELECT AVG(quantity_in_order) as average_quantity_in_contract
 FROM Position2;
 
-6. Получить статус заказа и номер клиента, где статус "в ожидании" для проверки менеджером
+6. Получить статус заказа и номер клиента, где статус "в обработке" для проверки менеджером
 
 SELECT status, client_id
 FROM Order
-WHERE status == 'в ожидании'
+WHERE status == 'в обработке'
