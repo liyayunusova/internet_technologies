@@ -12,7 +12,7 @@
 ### Физическая модель данных
 [Структура базы данных](https://github.com/liyayunusova/internet_technologies/blob/main/docs/sql/database_schema.png)
 ### Функциональные требования
-[Диаграммы деятельности - Регистрация пользователя, Формирование заказа, Модерация заказа, Оплата заказа, Регистрация представителя магазина](https://github.com/liyayunusova/internet_technologies/tree/main/docs/activity_diagrams)
+[Диаграммы деятельности](https://github.com/liyayunusova/internet_technologies/tree/main/docs/activity_diagrams)
 ### SQL запросы 
 [Файл с SQL-запросами](https://github.com/liyayunusova/internet_technologies/blob/main/docs/sql/sql%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B.sql)
 [Создание базы данных](https://github.com/liyayunusova/internet_technologies/blob/main/docs/sql/create_script.sql)
