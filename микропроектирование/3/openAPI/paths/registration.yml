@@ -1,0 +1,22 @@
+ post:
+      summary: Регистрация нового пользователя
+      operationId: registerUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegistration'
+      responses:
+        '201':
+          description: Пользователь успешно зарегистрирован
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '400':
+          description: Ошибка в данных регистрации
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
