@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: User Account Management API
+  version: 1.0.0
+  description: API для управления учетными записями пользователей
+servers:
+  - url: https://api.yourdomain.com/v1
+    description: Основной сервер API
+tags:
+  - name: Аутентификация
+    description: Операции аутентификации и управления сессией
+  - name: Регистрация
+    description: Операции регистрации новых пользователей
+  - name: Восстановление пароля
+    description: Операции для восстановления забытых паролей
+  - name: Учетная запись
+    description: Управление настройками учетной записи пользователя
