@@ -15,3 +15,14 @@ tags:
     description: Операции для восстановления забытых паролей
   - name: Учетная запись
     description: Управление настройками учетной записи пользователя
+    
+paths:
+  /log-in:
+    $ref: "paths/log_in.yml"
+  /log-out:
+    $ref: "paths/log_out.yml"
+  /registration:
+    $ref: "paths/registration.yml"
+  /new_password:
+    $ref: "paths/new_password.yml"
+    
