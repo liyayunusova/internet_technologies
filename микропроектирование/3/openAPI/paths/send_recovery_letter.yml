@@ -1,0 +1,57 @@
+ post:
+      tags:
+      - Восстановление пароля
+      description: Отправка на почту письма ссылки на восстановление
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: email@example.com
+              required:
+                - email
+      responses:
+        '200':
+          description: Recovery letter sent successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Recovery email sent successfully. Please check your inbox."
+        '400':
+          description: Bad Request - Invalid email format
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid email format. Please enter a valid email address."
+        '404':
+          description: Not Found - Email not registered
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Email address not registered in our system."
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Internal server error. Please try again later."

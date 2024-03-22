@@ -1,0 +1,51 @@
+get:
+      tags: 
+      - Восстановление пароля
+      description: Проверка токена на валидность
+      parameters:
+        - in: query
+          name: token
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Token is valid
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Token is valid."
+        '400':
+          description: Bad Request - Invalid token format
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid token format. Please check your token."
+        '401':
+          description: Unauthorized - Invalid or expired token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Token is invalid or has expired."
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Internal server error. Please try again later."
