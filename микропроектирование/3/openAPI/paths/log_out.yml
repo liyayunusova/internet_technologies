@@ -1,6 +1,0 @@
- post:
-      summary: Выход пользователя из системы
-      operationId: logoutUser
-      responses:
-        '204':
-          description: Успешный выход из системы
