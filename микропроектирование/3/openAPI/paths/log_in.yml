@@ -1,0 +1,83 @@
+post:
+      tags: 
+      - Аутентификация
+      summary: User login
+      description: Вход пользователя в систему
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  description: Почта пользователя
+                  type: string
+                  example: email@example.com
+                password:
+                  description: Пароль пользователя
+                  type: string
+                  example: UserPassword
+              required:
+                - email
+                - password
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                    description: "JWT token for authenticated sessions."
+                  message:
+                    type: string
+                    example: "Login successful."
+                    description: "Descriptive message indicating login status."
+        '400':
+          description: Bad Request - Invalid request format
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Malformed request. Please check the request format and try again."
+                    description: "Error message indicating the request is malformed or invalid."
+        '401':
+          description: Unauthorized - Incorrect username or password
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid credentials provided."
+                    description: "Error message for unauthorized access attempt."
+        '429':
+          description: Too many login attempts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Too many failed login attempts. Please try again later."
+                    description: "Error message when rate limit for login attempts is exceeded."
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Internal server error. Please contact support."
+                    description: "Generic error message for internal server issues."
